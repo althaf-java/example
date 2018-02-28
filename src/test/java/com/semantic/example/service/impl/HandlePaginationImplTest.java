@@ -93,9 +93,7 @@ public class HandlePaginationImplTest {
         Collection<Result> searchResults = new ArrayList<Result>();
         searchResults.add(new Result("https://link1", "title1", "summary1"));
         searchResults.add(new Result("https://link2", "title2", "summary2"));
-        searchResults.add(new Result("https://link3", "title3", "summary3"));
-        searchResults.add(new Result("https://link4", "title4", "summary4"));
-        searchResults.add(new Result("https://link5", "title5", "summary5"));        
+        searchResults.add(new Result("https://link3", "title3", "summary3"));       
         int startPage = 2;
         int pageSize = 1;
         
