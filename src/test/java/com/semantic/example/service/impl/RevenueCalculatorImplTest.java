@@ -1,4 +1,4 @@
-package com.semantic.example.impl;
+package com.semantic.example.service.impl;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

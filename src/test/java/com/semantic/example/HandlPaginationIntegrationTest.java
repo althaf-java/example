@@ -5,15 +5,15 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import com.semantic.example.service.HandlePagination;
 import org.junit.Test;
 
-import com.semantic.example.HandlePagination;
 import com.semantic.example.domain.Page;
 import com.semantic.example.domain.Result;
-import com.semantic.example.impl.HandlePaginationImpl;
+import com.semantic.example.service.impl.HandlePaginationImpl;
 
 public class HandlPaginationIntegrationTest {
-
+    
     private HandlePagination handlPagination = new HandlePaginationImpl();
     private Collection<Result> searchResults;
     private Page page;

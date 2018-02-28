@@ -1,4 +1,4 @@
-package com.semantic.example;
+package com.semantic.example.service;
 
 import java.math.BigDecimal;
 public interface RevenueCalculator {

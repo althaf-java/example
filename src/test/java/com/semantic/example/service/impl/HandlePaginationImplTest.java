@@ -1,4 +1,4 @@
-package com.semantic.example.impl;
+package com.semantic.example.service.impl;
 
 import static org.junit.Assert.*;
 
