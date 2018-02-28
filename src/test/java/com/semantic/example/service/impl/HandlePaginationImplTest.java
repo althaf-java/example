@@ -76,17 +76,6 @@ public class HandlePaginationImplTest {
         searchResults.add(new Result("https://link2", "title2", "summary2"));
         assertEquals(1,handlePaginationImpl.previousPage(1, 5, searchResults));
     }
-    
-    @Test
-    public void testWhenPageSizeIs0() {
-        Collection<Result> searchResults = new ArrayList<Result>();
-        for(int i = 0; i < 20; i++) {
-            searchResults.add(new Result("https://link"+i, "title1"+i, "summary1"+i));
-        }
-        Page page = handlePaginationImpl.getPagination(1, 0, searchResults);
-        
-        assertEquals(20, page.getResult().size());
-    }
 
     @Test
     public void testPagination() {
@@ -103,6 +92,17 @@ public class HandlePaginationImplTest {
         assertEquals(searchResults.toArray()[startPage - 1], page.getResult().toArray()[0]);
         assertEquals(startPage + 1, page.getNextPage());
         assertEquals(startPage - 1, page.getPrevPage());
+    }
+    
+    @Test
+    public void testPaginationWhenPageSizeIs0() {
+        Collection<Result> searchResults = new ArrayList<Result>();
+        for(int i = 0; i < 20; i++) {
+            searchResults.add(new Result("https://link"+i, "title1"+i, "summary1"+i));
+        }
+        Page page = handlePaginationImpl.getPagination(1, 0, searchResults);
+        
+        assertEquals(20, page.getResult().size());
     }
     
 }
