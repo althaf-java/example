@@ -1,4 +1,4 @@
-package com.semantic.example;
+package com.semantic.example.service;
 
 import static org.junit.Assert.assertEquals;
 
@@ -13,7 +13,7 @@ import com.semantic.example.domain.Result;
 import com.semantic.example.service.impl.HandlePaginationImpl;
 
 public class HandlPaginationIntegrationTest {
-    
+
     private HandlePagination handlPagination = new HandlePaginationImpl();
     private Collection<Result> searchResults;
     private Page page;
