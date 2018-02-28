@@ -23,12 +23,13 @@ public class HandlPaginationIntegrationTest {
     @Test
     public void testPaginationFeature() {
         givenIHaveSearchResult();
+        
         whenIRequestAGivenPageWithPageSizeOfResult(startPage, pageSize);
-        iShouldSeeUpToPageSizeResult(pageSize);
+        
+        iShouldSeeUpToPageSizeResult(pageSize);        
         resultShouldStartFromStartPage(startPage);
         iShouldBeGiveNumberOfNextPage(startPage + 1);
         iShouldBeGiveNumberOfPreviousPage(startPage - 1);
-
     }
 
     private void givenIHaveSearchResult() {
