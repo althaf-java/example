@@ -7,8 +7,8 @@ import java.util.Collection;
 
 import org.junit.Test;
 
-import com.semantic.example.domain.Page;
-import com.semantic.example.domain.Result;
+import com.semantic.example.modal.Page;
+import com.semantic.example.modal.Result;
 
 public class HandlePaginationImplTest {
     

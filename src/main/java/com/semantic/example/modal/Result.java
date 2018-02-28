@@ -1,4 +1,4 @@
-package com.semantic.example.domain;
+package com.semantic.example.modal;
 
 public class Result {
 

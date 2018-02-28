@@ -2,8 +2,8 @@ package com.semantic.example.service;
 
 import java.util.Collection;
 
-import com.semantic.example.domain.Page;
-import com.semantic.example.domain.Result;
+import com.semantic.example.modal.Page;
+import com.semantic.example.modal.Result;
 
 public interface HandlePagination {
 

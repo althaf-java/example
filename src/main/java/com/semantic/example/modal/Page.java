@@ -1,4 +1,4 @@
-package com.semantic.example.domain;
+package com.semantic.example.modal;
 
 import java.util.ArrayList;
 import java.util.Collection;

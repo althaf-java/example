@@ -5,11 +5,11 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import com.semantic.example.modal.Page;
+import com.semantic.example.modal.Result;
 import com.semantic.example.service.HandlePagination;
 import org.junit.Test;
 
-import com.semantic.example.domain.Page;
-import com.semantic.example.domain.Result;
 import com.semantic.example.service.impl.HandlePaginationImpl;
 
 public class HandlPaginationIntegrationTest {
